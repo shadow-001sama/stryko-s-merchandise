@@ -5,54 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>STRYKO – Premium Sports Merchandise</title>
 <meta name="description" content="STRYKO Premium Sports Shoes & Athletic Wear">
-<link rel="stylesheet" href="style.css">
-</head>
 
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
 <body>
 
 <header>
   <div class="logo">STRYKO</div>
   <nav>
     <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="#" onclick="viewCart()">Cart (<span id="cart-count">0</span>)</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <h1>Unleash Your Power</h1>
     <p>Premium Sports Merchandise</p>
-    <button onclick="shopNow()">Shop Now</button>
+    <button onclick="scrollToProducts()">Shop Now</button>
   </div>
 </section>
 
-<section class="products">
+<!-- PRODUCTS -->
+<section id="products" class="products">
   <h2>Featured Products</h2>
   <div class="product-grid">
-    
+
     <div class="card">
       <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoes">
       <h3>STRYKO Pro Shoes</h3>
-      <p>₹2,999</p>
-      <button>Add to Cart</button>
+      <p>₹2999</p>
+      <button onclick="addToCart('STRYKO Pro Shoes',2999)">Add to Cart</button>
+      <button onclick="addToWishlist('STRYKO Pro Shoes')">♡ Wishlist</button>
     </div>
 
     <div class="card">
       <img src="https://images.unsplash.com/photo-1520975922071-cd8f0b1b1d8c" alt="Jersey">
       <h3>STRYKO Elite Jersey</h3>
-      <p>₹1,499</p>
-      <button>Add to Cart</button>
+      <p>₹1499</p>
+      <button onclick="addToCart('STRYKO Elite Jersey',1499)">Add to Cart</button>
+      <button onclick="addToWishlist('STRYKO Elite Jersey')">♡ Wishlist</button>
     </div>
 
   </div>
 </section>
 
-<section class="contact">
+<!-- CONTACT -->
+<section id="contact" class="contact">
   <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:rohankadam2208@gmail.com">rohankadam2208@gmail.com</a></p>
-  <p>Phone: <a href="tel:+919372984221">+91 9372984221</a></p>
-  <p>Instagram: <a href="https://www.instagram.com/0taku_sama_" target="_blank">Follow Us</a></p>
+
+  <div class="social-icons">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919372984221" target="_blank" class="icon whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/0taku_sama_" target="_blank" class="icon instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:rohankadam2208@gmail.com" class="icon email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+  </div>
 </section>
 
 <footer>
@@ -61,4 +88,4 @@
 
 <script src="script.js"></script>
 </body>
-      </html>
+  </html>
