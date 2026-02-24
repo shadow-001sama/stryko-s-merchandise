@@ -1,2 +1,66 @@
 # stryko-s-merchandise
 STRYKO Premium Sports E-Commerce Demo Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STRYKO – Premium Sports Merchandise</title>
+<meta name="description" content="STRYKO Premium Sports Shoes & Athletic Wear">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">STRYKO</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Unleash Your Power</h1>
+    <p>Premium Sports Merchandise</p>
+    <button onclick="shopNow()">Shop Now</button>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoes">
+      <h3>STRYKO Pro Shoes</h3>
+      <p>₹2,999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975922071-cd8f0b1b1d8c" alt="Jersey">
+      <h3>STRYKO Elite Jersey</h3>
+      <p>₹1,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:rohankadam2208@gmail.com">rohankadam2208@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919372984221">+91 9372984221</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/0taku_sama_" target="_blank">Follow Us</a></p>
+</section>
+
+<footer>
+  <p>© 2026 STRYKO | Designed by Rohan Kadam</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
